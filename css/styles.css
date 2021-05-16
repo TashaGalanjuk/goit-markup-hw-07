@@ -89,12 +89,8 @@ textarea {
   color: var(--accent-text-color);
 }
 
-.colortext {
-  color: var(--accent-text-color);
-}
-
-/* HIDDEN TITLES */
-.hiden-title {
+/* HIDDEN TITLE */
+.hidden-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -110,12 +106,12 @@ textarea {
   position: fixed;
   left: 0px;
   top: -1px;
+  transition: opacity var(--animation), visability var(--animation);
 
   width: 100%;
   height: 100%;
 
   background-color: #75757593;
-  transition: opacity var(--animation), visability var(--animation);
 }
 
 .backdrop.is-hidden {
@@ -130,7 +126,6 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 100%;
   max-width: 528px;
   min-height: 581px;
   padding: 40px;
@@ -143,7 +138,7 @@ textarea {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 
   margin-bottom: 12px;
@@ -222,18 +217,16 @@ textarea {
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-size: 14px;
+
   width: 100%;
 }
 
 .form-field textarea {
   width: 100%;
-  /* height: 120px; */
   padding: 11px 12px;
   font-family: var(--title-font);
   font-weight: 400;
   font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
   line-height: 14px;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -280,20 +273,8 @@ textarea {
   margin-right: 8px;
 }
 
-/* SITE NAV */
-.logo-header {
-  display: inline-block;
-  margin-right: 93px;
-
-  color: var(--title-text-color);
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.header .container {
+/* HEADER */
+.header__container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -301,12 +282,30 @@ textarea {
   background-color: var(--white-bg-color);
 }
 
-.main-item:not(:last-child) {
-  margin-right: 50px;
+.header-nav {
+  align-items: center;
 }
 
-.main-nav {
-  align-items: center;
+.logo {
+  display: inline-block;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo--header {
+  margin-right: 93px;
+  color: var(--title-text-color);
+}
+
+.logo-colortext {
+  color: var(--accent-text-color);
+}
+
+.main-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav {
@@ -527,9 +526,9 @@ textarea {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
   color: var(--white-text-color);
 }
@@ -746,7 +745,7 @@ textarea {
   line-height: 1.62;
   cursor: pointer;
   text-align: center;
-  letter-spacing: 0.03em;
+
   padding: 6px 22px;
 
   color: var(--title-text-color);
@@ -811,7 +810,7 @@ textarea {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.03em;
+
   padding: 63px 24px;
 
   color: var(--white-text-color);
@@ -834,9 +833,9 @@ textarea {
 .footer-connecting {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 14px;
+
   line-height: 1.17;
-  letter-spacing: 0.03em;
+
   color: var(--white-text-color);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -855,9 +854,9 @@ textarea {
 .footer-subscription {
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 14px;
+
   line-height: 1.17;
-  letter-spacing: 0.03em;
+
   color: var(--white-text-color);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -871,7 +870,6 @@ textarea {
   padding: 11px 12px;
   width: 358px;
   height: 50px;
-  font-size: 14px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -930,7 +928,7 @@ textarea {
   font-family: var(--title-font);
   font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1000,13 +998,7 @@ textarea {
   margin-bottom: 8px;
 }
 
-.logo-footer {
-  display: block;
+.logo--footer {
   margin-bottom: 20px;
   color: var(--white-text-color);
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
 }

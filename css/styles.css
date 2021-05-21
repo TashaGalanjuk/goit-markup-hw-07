@@ -785,22 +785,24 @@ textarea {
 
 .checkbox {
   position: absolute;
+
   width: 1px;
   height: 1px;
   border: 0;
   margin: -1px;
   padding: 0;
   clip: rect(0 0 0 0);
+
   overflow: hidden;
 }
 
 .checkbox:checked + .label-span {
-  background-color: var(--accent-text-color);
-  background-image: url(../images/icons/vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
+  background-color: var(--accent-text-color);
+  background-image: url(../images/icons/vector.svg);
   background-origin: border-box;
   border: var(--accent-text-color);
 }
@@ -811,6 +813,7 @@ textarea {
 
 .label-span {
   display: inline-block;
+
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
@@ -826,8 +829,9 @@ textarea {
 
 .gallery-nav {
   display: flex;
-  margin-bottom: 50px;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 .gallery-nav__item {
@@ -842,6 +846,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -863,8 +868,8 @@ textarea {
 }
 
 .gallery-about {
-  padding: 20px 24px;
   flex-grow: 1;
+  padding: 20px 24px;
 }
 
 .gallery-title {
@@ -882,20 +887,18 @@ textarea {
 }
 
 .button-nav {
+  text-align: center;
+
   font-family: var(--title-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
-  text-align: center;
-
   padding: 6px 22px;
-
-  color: var(--title-text-color);
-  background-color: var(--second-bg-color);
-
   border: 0;
   border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--second-bg-color);
 
   transition: color var(--animation), background-color var(--animation),
     box-shadow var(--animation);
@@ -932,9 +935,11 @@ textarea {
 
 .thumb-product {
   position: relative;
+
   width: 100%;
   height: 100%;
   background-color: #2195f36c;
+
   overflow: hidden;
 }
 
@@ -943,22 +948,20 @@ textarea {
   justify-content: center;
   align-items: center;
   position: absolute;
+  transform: translateY(100%);
+
   width: 100%;
   height: 100%;
   left: 0;
   bottom: 0;
   opacity: 0;
-
   font-family: var(--title-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-
   padding: 63px 24px;
-
   color: var(--white-text-color);
   background: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
   transition: transform var(--animation), opacity var(--animation);
 }

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -18,24 +19,24 @@
         <div class="header__container container">
             <nav class="header-nav">
                 <a class="logo logo--header" href="/"><span class="logo-colortext">Web</span>Studio</a>
-                <ul class="header-nav list">
+                <ul class="header-nav">
                     <li class="header__item"><a class="header-nav__link" href="./index.html">Студия</a></li>
-                    <li class="header__item"><a class="header-nav__link current" href="">Портфолио</a></li>
+                    <li class="header__item"><a class="header-nav__link header-nav__link-current" href="">Портфолио</a></li>
                     <li class="header__item"><a class="header-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="auth-nav list">
-                <li class="header__item"><a class="auth-nav__link link" href="mailto:info@devstudio.com">
+            <ul class="auth-nav">
+                <li class="auth-nav__item"><a class="auth-nav__link link" href="mailto:info@devstudio.com">
                     <svg class="auth-nav__icon" width="34" height="12">
                         <use href="./images/icons/sprite.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a>
                 </li>
-                <li class="header__item"><a class="auth-nav__link link" href="tell:+380961111111">
-                        <svg class="auth-nav__icon" width="32" height="16">
-                            <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
+                <li class="auth-nav__item"><a class="auth-nav__link link" href="tell:+380961111111">
+                    <svg class="auth-nav__icon" width="32" height="16">
+                        <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -46,7 +47,7 @@
         <section class="gallery">    
             <div class="container">
                 <h1 class="hidden-title">Портфолио</h1>
-                <ul class="gallery-nav list">
+                <ul class="gallery-nav">
                     <li class="gallery-nav__item">
                         <button class="button-nav" type="button">Все</button>
                     </li>
@@ -66,7 +67,7 @@
             
                 <h2 class="hidden-title">Галлерея проектов</h2>
             
-                <ul class="gallery-progect list">               
+                <ul class="gallery-progect">               
     
                     <li class="gallery-progect__item">
                         <a href="" class="gallery-progect__link">
@@ -119,7 +120,7 @@
                     <li class="gallery-progect__item">
                         <a href="" class="gallery-progect__link">
                             <div class="thumb-product">
-                                <img src="./images/gallery5.jpg" width="370" height="294" alt="Проект Prime" />       
+                                <img src="./images/gallery4.jpg" width="370" height="294" alt="Проект Prime" />       
                                 <div class="thumb-text">
                                     <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -135,7 +136,7 @@
                     <li class="gallery-progect__item">
                         <a href="" class="gallery-progect__link">
                             <div class="thumb-product">
-                                <img src="./images/gallery1.jpg" width="370" height="294" alt="Проект Boxes" />             
+                                <img src="./images/gallery5.jpg" width="370" height="294" alt="Проект Boxes" />             
                                 <div class="thumb-text">
                                     <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                         шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -238,7 +239,7 @@
         </div>
         <div class="footer-box">
             <h3 class="footer-title">Присоединяйтесь</h3>
-            <ul class="footer-icons list">
+            <ul class="footer-icons">
                 <li class="footer-icons-item">
                     <a href="" class="footer-icons-link" target="_blank" rel="noopener noreferrer">
                         <svg class="footer-icons-svg">
@@ -317,7 +318,7 @@
                 </label>
                 <label class="form-field">
                     Комментарий
-                    <textarea name="" id="" rows="7" placeholder="Введите текст"></textarea>
+                    <textarea rows="7" placeholder="Введите текст"></textarea>
                 </label>
                 <label class="label">
                     <input class="checkbox" type="checkbox" name="checkbox" required>

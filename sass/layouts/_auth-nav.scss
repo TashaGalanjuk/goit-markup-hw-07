@@ -16,13 +16,12 @@
   letter-spacing: 0.02em;
   cursor: pointer;
   transition: color var(--animation);
-}
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
-  color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
-
 .auth-nav__icon {
   fill: currentColor;
   margin-right: 10px;

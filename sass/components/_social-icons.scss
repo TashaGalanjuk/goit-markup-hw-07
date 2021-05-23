@@ -2,7 +2,7 @@
   display: inline-flex;
 }
 
-.social-icons-svg {
+.social-icons__svg {
   width: 20px;
   height: 20px;
   fill: var(--icons-color);
@@ -30,11 +30,11 @@
   background-color: var(--accent-text-color);
 }
 
-.social-icons__link:hover .social-icons-svg,
-.social-icons__link:focus .social-icons-svg {
+.social-icons__link:hover .social-icons__svg,
+.social-icons__link:focus .social-icons__svg {
   fill: var(--white-text-color);
 }
 
-.social-icons-item:not(:last-child) {
+.social-icons__item:not(:last-child) {
   margin-right: 10px;
 }

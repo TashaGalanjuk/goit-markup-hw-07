@@ -7,10 +7,6 @@
   text-decoration: none;
 }
 
-.logo-colortext {
-  color: var(--accent-text-color);
-}
-
 .logo--header {
   margin-right: 93px;
   color: var(--title-text-color);
@@ -19,4 +15,8 @@
 .logo--footer {
   margin-bottom: 20px;
   color: var(--white-text-color);
+}
+
+.logo-colortext {
+  color: var(--accent-text-color);
 }

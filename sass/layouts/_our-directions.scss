@@ -14,16 +14,14 @@
   display: flex;
 }
 
-.thumb-title {
+.our-directions__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-
   width: 100%;
   height: 70px;
   left: 0;
   bottom: 0;
-
   background: rgba(47, 48, 58, 0.8);
 }

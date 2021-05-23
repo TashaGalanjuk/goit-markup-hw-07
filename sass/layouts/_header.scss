@@ -9,11 +9,10 @@
   align-items: center;
 }
 
-.header-nav {
+.header__nav {
   display: inline-flex;
 }
-
-.header__item:not(:last-child) {
+.header-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -49,6 +48,6 @@
   color: var(--accent-text-color);
 }
 
-.header-nav__link.current {
+.header-nav__link-current {
   color: var(--accent-text-color);
 }

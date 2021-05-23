@@ -29,7 +29,7 @@
   background-color: var(--white-bg-color);
 }
 
-.modal-title {
+.modal__title {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 20px;
@@ -41,12 +41,12 @@
   text-align: center;
 }
 
-.modal-button:hover .modal-icon-close,
-.modal-button:focus .modal-icon-close {
+.modal__button:hover .modal__icon-close,
+.modal__button:focus .modal__icon-close {
   fill: var(--accent-text-color);
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -61,14 +61,14 @@
   cursor: pointer;
 }
 
-.modal__modal-icon-close:hover {
+.modal__modal__icon-close:hover {
   border-color: var(--accent-text-color);
 }
 
-.form-field:focus-within > .modal-icon {
+.form-field:focus-within > .form-field__icon {
   fill: var(--accent-text-color);
 }
-.form-field:hover > .modal-icon {
+.form-field:hover > .form-field__icon {
   fill: var(--accent-text-color);
   border: var(--accent-text-color);
 }
@@ -80,7 +80,7 @@
   border-color: var(--accent-text-color);
 }
 
-.modal-icon {
+.form-field__icon {
   position: absolute;
   width: 18px;
   height: 18px;
